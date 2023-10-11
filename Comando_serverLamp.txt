@@ -1,0 +1,21 @@
+1  sudo apt update
+    2  sudo apt upgrade
+    3  sudo hostnamectl set-hostname serverhenry
+    4  sudo reboot
+    5  sudo apt update
+    6  sudo apt upgrade
+    7  sudo apt install apache2
+    8  sudo apt install mysql-server
+    9  sudo apt install php libapache2-mod-php php-mysql
+   10  sudo apt install phpmyadmin
+   11  sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
+   12  sudo a2enconf phpmyadmin
+   13  sudo systemctl restart apache2
+   14  sudo su
+   15  sudo mysql_secure_installation
+   16  sudo mysql -u root
+   17  sudo mysql -u root -p
+   18  cd /var/www/html
+   19  sudo chmod 777 var/www/html
+   20  sudo chmod 777 /var/www/html
+   21  history
